@@ -1,2 +1,2 @@
 # ChatApp
-A Chat Application Written in Express/Node.js
+### A Chat Application Written in Express / Socket.io / Node.js
