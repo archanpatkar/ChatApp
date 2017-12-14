@@ -7,7 +7,7 @@ app.get("/Chat",(req,res) => {
  res.sendFile(__dirname + "/Chat.html");
 });
 
-var hserver = app.listen(8000,() => console.log("Server Started at 8000"));
+var hserver = app.listen(8000,() => console.log("Chat Application Started at http://localhost:8000/Chat"));
 
 io.listen(hserver);
 
