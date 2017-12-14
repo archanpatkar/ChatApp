@@ -10,45 +10,52 @@
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.0.0-beta.4/dist/css/bootstrap-material-design.min.css" integrity="sha384-R80DC0KVBO4GSTw+wZ5x2zn2pu4POSErBkf8/fSFhPXHxvHJydT0CSgAP2Yo2r4I" crossorigin="anonymous">
   </head>
-  <body>
+  <body style="background-color:#E9ECEF;">
     <script src="/socket.io/socket.io.js"></script>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-dark bg-dark">
      <div class="container-fluid">
        <div class="navbar-header">
-         <p class="navbar-text">RPIAN Chat Client</p>
+         <h2 class="navbar-text">Pat-ChatApp</h2>
        </div>
      </div>
     </nav>
-    <!-- ChatApp -->
-    <div class="container">
-     <div class="jumbotron">
-       <div id="namecontainer">
-         <label for="name">Name:</label>
-         <input type="text" value="Mr Nobody" class="form-control" id="name">
-       </div>
+    <div class="jumbotron">
+    <br>
+    <div class="card bg-dark">
+      <div class="card-body">
+        <!-- ChatApp -->
+        <div class="container">
+         <div class="jumbotron">
+           <div id="namecontainer">
+             <label for="name">Name:</label>
+             <input type="text" value="Mr Nobody" class="form-control" id="name">
+           </div>
 
-       <br>
-       <br>
+           <br>
+           <br>
 
-       <div class="chatwindow">
-         <label for="window">Messages:</label>
-         <textarea class="form-control" disabled rows="5" id="window"></textarea>
-       </div>
+           <div class="chatwindow">
+             <label for="window">Messages:</label>
+             <textarea class="form-control" disabled rows="5" id="window"></textarea>
+           </div>
 
-       <br>
-       <br>
+           <br>
+           <br>
 
-       <div id="chatbox">
-         <div class="input-group">
-           <input type="text" class="form-control" id="box"
-           placeholder="Write and Send some Message...">
-           <span class="input-group-btn">
-             <button id="send" class="btn btn-primary" type="button">Send</button>
-           </span>
+           <div id="chatbox">
+             <div class="input-group">
+               <input type="text" class="form-control" id="box"
+               placeholder="Write and Send some Message...">
+               <span class="input-group-btn">
+                 <button id="send" class="btn btn-primary" type="button">Send</button>
+               </span>
+             </div>
+           </div>
          </div>
-       </div>
-     </div>
+        </div>
+      </div>
     </div>
+  </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js" integrity="sha384-fA23ZRQ3G/J53mElWqVJEGJzU0sTs+SvzG8fXVWP+kJQ1lwFAOkcUOysnlKJC33U" crossorigin="anonymous"></script>
